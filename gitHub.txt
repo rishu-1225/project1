@@ -1,0 +1,43 @@
+have to push local project over github repo
+1. open your local project in vscode
+2. convert your local folder into git repo [ git init ]
+3. check your project is it local or a git repo [ git status]
+4. add your project files in staging area so that it can be commited(save) [ git add .]
+5. check your email and user name before commit because without having email and name you can't be able to commit [ git config --global --list]
+6. to set your email and username you should have to use the git command 
+[ git config --global user.email "email@gmail.com"]
+[ git config --global user.name "username"]
+7. check your current  branch  [ git branch]
+8. to change the branch from master to main  [ git branch -M main]
+9. to commit all files that are in staging area so that it can be push on github [ git commit -m "message"]
+10. to check the remote (github repo) url  [ git remote -v]
+11. add remote (github repo) url  [git remote add origin url of github repo]
+12. now you can push your project over github repo using [ git push origin main]
+13. first time whenever you will try to push it will ask for authentication so complete your authentication first to complete push operation.
+14. now goto github and check your repo for new files are there or not? 
+
+have to pull git repo on your local system and make changes and push back to the github repo
+
+1. login in your github account
+2. open the github repo (repo that have to change)
+3. copy the link (url) of the githhub repo
+4. create a new folder (newproject) in your local machine
+5. open the folder (newproject) in vscode 
+6. open terminal in vscode
+7. check git is installed or not [git --version ]
+8. clone the github repo in your local folder [ git clone url of the github repo ]
+9. now you will get a repo inside your local folder it may having some files or not
+10. your current directory is your local folder so you should have to switch from local folder to github repo [ cd <name of github repo>]
+11. make the desirable changes inside the file as well as to add some new files
+12. now have to add the changes in staging area [ git add .]
+13. now have check the status of git repo [ git status]
+14. now have to check the email and name of currently logged-in user [ git config --global --list]
+15. now set the email and name 
+	[git config --global user.email "email@gmail.com"]
+	[git config --global user.name "username" ]
+16. to check the branch 	[ git branch]
+17. to change the branch from master to main [git branch -M main]
+18. to commit all changes using [ git commit -m "message"]
+19. to view remote url   of github repo [ git remote -v]
+20. to set remote url of github repo [git remote add origin url]
+21. git push origin main  
